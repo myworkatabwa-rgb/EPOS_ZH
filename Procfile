@@ -1,0 +1,1 @@
+web gunicorn Z_pos.wsgi:application
