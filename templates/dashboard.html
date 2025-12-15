@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Recent Orders</h2>
+<ul>
+    {% for order in orders %}
+    <li>{{ order.order_id }} - {{ order.status }} - {{ order.total }}</li>
+    {% empty %}
+    <li>No orders found.</li>
+    {% endfor %}
+</ul>
+
+<h2>Products</h2>
+<ul>
+    {% for product in products %}
+    <li>{{ product.name }} - {{ product.stock }} in stock</li>
+    {% empty %}
+    <li>No products found.</li>
+    {% endfor %}
+</ul>
+
+<h2>Customers</h2>
+<ul>
+    {% for customer in customers %}
+    <li>{{ customer.name }} - {{ customer.phone }}</li>
+    {% empty %}
+    <li>No customers found.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

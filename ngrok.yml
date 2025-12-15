@@ -1,0 +1,6 @@
+authtoken: 2ywe8hX0scV4DoksMIX5Z89eaRq_6HdiexN9PkdmSnfHkf3cP
+
+tunnels:
+  django:
+    addr: 8000
+    proto: http
